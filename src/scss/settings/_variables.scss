@@ -1,0 +1,9 @@
+
+@use "colors" as *;
+@use "sass:color" as color;
+// Breakpoints
+$bp-sm: 36rem; /* 576px */
+$bp-md: 48rem; /* 768px */
+$bp-lg: 62rem; /* 992px */
+$bp-xl: 75rem; /* 1200px */
+$bp-xxl: 90rem; /* 1440px */
