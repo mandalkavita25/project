@@ -1,0 +1,28 @@
+.header{
+    background-color: $col1 ;
+    color: $col3;
+}
+.header__wrapper{
+    display: flex;
+    align-items: center;
+}
+.navbar__items{
+    list-style: none;
+    display: flex;
+    font-family: $font;
+}
+.navbar__item{
+    padding: 0.5rem;
+}
+.logo__image{
+    margin-block-end:1rem;
+    margin-block-start:1rem;
+    margin-inline-end: 1rem;
+}
+.login{
+  margin-inline-end: 1rem;
+}
+.button--green{
+  padding:0.5rem;
+  margin-inline-end: 2rem;
+}
