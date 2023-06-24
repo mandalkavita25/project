@@ -1,0 +1,37 @@
+@use "../../settings" as *;
+
+
+.banner{
+    background-color: $col2;
+    color: $col3;
+    text-align: center;
+    padding-block-start: .5rem;
+    padding-block-end: .5rem;
+
+&__text{
+    font-family: sans-serif ;
+    margin-block-start: 1rem;
+    margin-block-end: 3rem;
+    padding-inline-start: 10rem;
+    padding-inline-end: 15rem;
+    }
+    }
+.button--trans{
+    background-color: $col2;
+    border: 2px solid $col3;
+    padding: 0.8rem;
+    font-size: 0.9rem;
+& a:hover{
+    background-color: $col1;
+    }
+    }
+.play{
+    margin-inline-start: 65rem;
+    display: inline;
+    }
+.button--play{
+background-color: $col2;
+border:.1rem solid white;
+padding: .3rem;
+
+    }
