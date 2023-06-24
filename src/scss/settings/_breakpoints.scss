@@ -1,0 +1,28 @@
+/**
+ * @file
+ * Breakpoint mixin.
+ */
+
+ @use "variables" as *;
+
+ $breakpoints: (
+   "sm": $bp-sm,
+   "md": $bp-md,
+   "lg": $bp-lg,
+   "xl": $bp-xl,
+   "xxl": $bp-xxl,
+ );
+
+ @mixin breakpoint($screen, $type: min) {
+   @if map_has_key($breakpoints, $screen) {
+     $screen: map_get($breakpoints, $screen);
+
+     @if $type == max {
+       $screen: $screen - 0.0625rem;
+     }
+
+     @media only screen and (#{$type}-width: $screen) {
+       @content;
+     }
+   }
+ }
